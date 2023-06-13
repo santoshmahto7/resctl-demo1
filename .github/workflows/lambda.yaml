@@ -59,7 +59,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::111111111111:role/IoCostLambdaManager
           role-duration-seconds: 1200
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region: us-east-1
 
       - name: Update lambda function
         run: >
